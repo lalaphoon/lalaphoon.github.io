@@ -86,6 +86,11 @@
     div#hmenu .active {
     background: rgba(0, 0, 0,0.5);
     }
+
+    div#footer{
+        text-align:center;
+        height:50px;
+    }
     .maincontent{
 
         background: rgba(0,0,0,0.5);
@@ -98,10 +103,9 @@
         
     }
     .hidden {
-        visibility: hidden;
+        display:none;
         over-flow: hidden;
-        width: 0px;
-        height: 0px;
+        
     }
      </style>
      <script>
@@ -113,7 +117,8 @@
                 //$(".maincontent").children().hide();
                 //$(".maincontent").find(divv).show();
                 $(".maincontent").children().addClass('hidden');
-                $(".maincontent").find(divv).removeClass('hidden');             
+                $(".maincontent").find(divv).removeClass('hidden');
+                     
             });
         });
      </script>
@@ -193,9 +198,9 @@
 
 </div>
 <div id="footer">
-    <ul class="copyright">
-          <p>&copy; Lalaphoon</p>
-    </ul>
+    
+     <p>&copy; Lalaphoon</p>
+    
 </div>
 </body>
 </html>
