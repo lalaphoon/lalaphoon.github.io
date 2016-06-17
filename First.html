@@ -54,8 +54,20 @@
     }
     li {
     float: left;
-}
-
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background: rgba(0,0,0,0.5);
+    }
+    .active {
+    background: rgba(102, 255, 255,0.2);
+    }
     .maincontent{
 
         background: rgba(0,0,0,0.5);
@@ -79,7 +91,7 @@
 </div>
 <div >
     <ul>
-        <li><a href="#" >About me</a></li>
+        <li><a class = "active" href="#" >About me</a></li>
         <li><a href="#" >My Portfolio</a></li>
         <li><a href="#" >My Projects</a></li>
         <li><a href="#" >Contact Me</a></li>
