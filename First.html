@@ -105,7 +105,10 @@
         $(document).ready(function(){
             $("#hmenu ul li a").on('click', function(e){
                 e.preventDefault();
-                $(this).closest('li').addClass('active').siblings().removeClass('active')
+                $(this).closest('li').addClass('active').siblings().removeClass('active');
+                var divv = "#"+$(e.target).attr("target");
+                $(".maincontent").children().hide();
+                $(".maincontent").find(divv).show();             
             });
         });
      </script>
@@ -123,18 +126,18 @@
 <!-- Navigation bar -->
 <div id="hmenu">
     <ul>
-        <li class="active" style="width:20%"><a href="#" >About me</a></li>
-        <li style="width:20%"><a href="#" >My Portfolio</a></li>
-        <li style="width:20%"><a href="#" >My Projects</a></li>
-        <li style="width:20%"><a href="#" >Contact Me</a></li>
-        <li style="width:20%"><a href="#" >My Links</a></li>
+        <li  class="active" style="width:20%"><a href="#" target="me">About me</a></li>
+        <li  style="width:20%"><a href="#" target="portfolio" >My Portfolio</a></li>
+        <li style="width:20%"><a href="#" target="projects" >My Projects</a></li>
+        <li style="width:20%"><a href="#" target="contact">Contact Me</a></li>
+        <li style="width:20%"><a href="#" target="links">My Links</a></li>
     </ul>
 </div>
 
 <!--main content -->
 <div class = "maincontent">
 
-<article id="me" >
+<div id="me" >
     <!--h3>About Me</h3-->
     <p>I am a forth year student at <strong>University of Waterloo</strong> Studying <strong>Computer Science</strong> and <strong>Fine Arts</strong>.</p>
     
@@ -145,7 +148,7 @@
     <br />
 
     
-</article>
+</div>
 
 
 <div id="portfolio">
@@ -186,7 +189,7 @@
 </div>
 <div id="footer">
     <ul class="copyright">
-          <li>&copy; Lalaphoon</li>
+          <p>&copy; Lalaphoon</p>
     </ul>
 </div>
 </body>
