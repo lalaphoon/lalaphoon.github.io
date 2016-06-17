@@ -14,6 +14,11 @@
 
     <!-- Latest compiled JavaScript -->
     <!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script-->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/init.js"></script>
      
     <style type="text/css">
 
@@ -28,11 +33,13 @@
 
         color:#80ffff;
         text-align:center;
+        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
     }
     h2{
         color:#80ffbf;
         text-align:center;
+        font-family: Arial, Helvetica, sans-serif;
 
     }
     h3{
@@ -47,7 +54,6 @@
     }
     div#title {
         height:200px;
-
     }
     div#hmenu ul {
         list-style-type: none;
@@ -70,6 +76,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
         text-decoration: none;
+        
       
     }
     div#hmenu li a:hover:not(.active) {
@@ -81,9 +88,13 @@
     .maincontent{
 
         background: rgba(0,0,0,0.5);
-        width:200px;
-        height:600px;
-        float: left
+        text-align:center;
+        height:900px;
+        float: left;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: Tahoma, Geneva, sans-serif;
         
     }
    
@@ -97,9 +108,10 @@
     <h1>Lalaphoon's Seashore</h1>
     <h2>Welcome to visit my world </h2>    
 </div>
+<!-- Navigation bar -->
 <div id="hmenu">
     <ul>
-        <li style="width:20%"><a href="#" >About me</a></li>
+        <li style="width:20%"><a href="#me" >About me</a></li>
         <li style="width:20%"><a href="#" >My Portfolio</a></li>
         <li style="width:20%"><a href="#" >My Projects</a></li>
         <li style="width:20%"><a href="#" >Contact Me</a></li>
@@ -107,8 +119,11 @@
     </ul>
 </div>
 
-<div class="maincontent">
-    <h3>About Me</h3>
+<!--main content -->
+<div class = "maincontent">
+
+<article id="me" class="panel" >
+    <!--h3>About Me</h3-->
     <p>I am a forth year student at <strong>University of Waterloo</strong> Studying <strong>Computer Science</strong> and <strong>Fine Arts</strong>.</p>
     
     <p>
@@ -118,24 +133,24 @@
     <br />
 
     
-</div>
+</article>
 
 
-<div class = "maincontent">
-    <h3>My Portfolio</h3>
+<div >
+    <!--h3>My Portfolio</h3-->
     <img src="MyPortfolio/zhenhuan.jpg" height = "200" width = "200"/>
     <img src="MyPortfolio/test.jpg" height = "200" width = "200"/>
     <a href="https://www.instagram.com/lalaphoon/">View More</a>
    
 </div>
-<div class = "maincontent">
-    <h3>My Projects</h3>
+<div >
+    <!--h3>My Projects</h3-->
     <p>Moments <br />Moments is designed to help us easily capture and organize the many precious moments in our daily lives. It supports 4 multimedia types (text/audio/photo/sticker/video) and provides various organization methods. Capture your memories with Moments!</p>
     <a href="https://itunes.apple.com/ca/app/moments-stories/id1093880482?mt=8">View the app in Apple Store</a>
    
 </div>
-<div class="maincontent">
-    <h3>Contact Me</h3>
+<div >
+    <!--h3>Contact Me</h3-->
     <form>
         <input type="text" placeholder="Title" name="title" />
         <br /><br />
@@ -147,14 +162,15 @@
     </form>
    
 </div>
-<div class = "maincontent">
-    <h3>My Links</h3>
+<div >
+    <!--h3>My Links</h3-->
     <ul>
         <li><a href="https://www.linkedin.com/in/monica-luo-70399857?trk=hp-identity-name">Linkedin</a></li>
         <li><a href="https://www.instagram.com/lalaphoon/">Instagram</a></li>
         <li><a href="https://twitter.com/lalaphoon">Twitter</a></li>
     </ul>
     
+</div>
 </div>
 <!--div class="maincontent">
     <p><a href="#top">Back to top</a></p>
