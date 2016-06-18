@@ -80,9 +80,7 @@
         font-weight: bold;
         padding-top: 30px;
         padding-bottom: 30px;
-        text-decoration: none;
-        
-      
+        text-decoration: none;   
     }
     div#hmenu li a:hover:not(.active) {
         background: rgba(0,0,0,0.5);
@@ -93,7 +91,36 @@
 
     div#footer{
         text-align:center;
-      
+        color:#99ffff;   
+    }
+    .submitbutton1
+    {
+        padding: 10px 15px 11px !important;
+        font-size: 18px !important;
+        background-color: #57d6c7;
+        font-weight: bold;
+        text-shadow: 1px 1px #57D6C7;
+        color: #ffffff;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 1px solid #57D6C7;
+        cursor: pointer;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    }
+    .submitbutton{
+        padding: 89px 10px;
+
+        font-size: 16px;
+        text-align: center;
+        background-color:rgba(0,0,0,0.2);
+        color:#99ffff;
+        width: 200px;
+        
+        border: 1px solid #99ffff;
+        
     }
     .maincontent{
 
@@ -184,11 +211,11 @@
 </div>
 
 
-<div id="portfolio" class="hidden">
+<div id="portfolio" class="hidden" style="display:flex;align-items: flex-start">
     <!--h3>My Portfolio</h3-->
     <img src="MyPortfolio/zhenhuan.jpg" height = "200" width = "200"/>
     <img src="MyPortfolio/test.jpg" height = "200" width = "200"/>
-    <a href="https://www.instagram.com/lalaphoon/">View More</a>
+    <a class="submitbutton" href="https://www.instagram.com/lalaphoon/">View More</a>
    
 </div>
 <div id ="projects" class="hidden">
