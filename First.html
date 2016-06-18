@@ -47,10 +47,17 @@
         color:#b3ffff;
         text-align:center;
     }
-    div#me{
+    div#me {
         color:#80ffdf;
     }
+    div#projects{
+       color:#80ffdf; 
+    }
     #me header{
+        color:#99ffff;
+        font-weight: bold;
+    }
+    #projects header{
         color:#99ffff;
         font-weight: bold;
     }
@@ -86,24 +93,23 @@
         background: rgba(0,0,0,0.5);
     }
     div#hmenu .active {
-    background: rgba(0, 0, 0,0.5);
+    background: rgba(0, 0, 0,0.45);
     }
 
     div#footer{
         text-align:center;
-        color:#99ffff;   
+        color:#99ffff; 
+        opacity: 0.75;  
     }
     .submitbutton{
-        padding: 89px 60px;
         position:relative;
-        top:-100px;
+        
         font-size: 16px;
         text-align: center;
         background-color:rgba(0,0,0,0.2);
-        color:#99ffff;
-        
-        border: 1px solid #99ffff;
-        
+        color:#99ffff; 
+        border: 1px solid #99ffff; 
+        text-decoration: none;  
     }
     .floating-box{
         margin:10px;
@@ -201,13 +207,21 @@
     <!--h3>My Portfolio</h3-->
     <img src="MyPortfolio/zhenhuan.jpg" height="200" width="200" class="floating-box"/>
     <img src="MyPortfolio/test.jpg" height="200" width="200" class="floating-box"/>
-    <a class="submitbutton floating-box" href="https://www.instagram.com/lalaphoon/">View More</a>
+    <!--_blank target can open a page in a new window-->
+    <a class="submitbutton floating-box" target="_blank" href="https://www.instagram.com/lalaphoon/" style="padding: 89px 60px;top:-100px;">View More</a>
    
 </div>
 <div id ="projects" class="hidden">
     <!--h3>My Projects</h3-->
-    <p>Moments <br />Moments is designed to help us easily capture and organize the many precious moments in our daily lives. It supports 4 multimedia types (text/audio/photo/sticker/video) and provides various organization methods. Capture your memories with Moments!</p>
-    <a href="https://itunes.apple.com/ca/app/moments-stories/id1093880482?mt=8">View the app in Apple Store</a>
+    <div class="floating-box">
+        <img src="images/Moments.jpg" height="200" width="200" />
+    </div>
+    <div class="floating-box" style="width:550px">
+        <a class = "submitbutton" target="_blank"href="https://itunes.apple.com/ca/app/moments-stories/id1093880482?mt=8" style="padding:20px 40px; top:-50px">View the App</a>
+        <header>Moments (IOS/SWIFT)</header> 
+        <p>Moments is designed to help us easily capture and organize the many precious moments in our daily lives. It supports 4 multimedia types (text/audio/photo/sticker/video) and provides various organization methods. Capture your memories with Moments!</p>
+    </div>
+    
    
 </div>
 <div id="contact" class="hidden">
