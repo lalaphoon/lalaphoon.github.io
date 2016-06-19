@@ -179,19 +179,19 @@ if($_POST["submit"]){
 
     }
     input[type='text']{
-        color:#99ffff; 
+        color:#80ffdf; 
         font-size: 18px;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         padding: 10px;
     }
      input[type='email']{
-        color:#99ffff; 
+        color:#80ffdf; 
         font-size: 18px;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         padding: 10px;
     }
     textarea{
-        color: #99ffff; 
+        color: #80ffdf; 
         font-size: 18px;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         padding: 10px;
