@@ -1,21 +1,15 @@
 
-
-<html>
-<body>
-
-<?php 
+<?PHP
  $to = 'lalaphoon@gmail.com';
  $subject=$_POST['title'];
  $name = $_POST['name'];
  $email=$_POST['email'];
  $message=$_POST['comment'];
  
- $header='$email';
 if($_POST){
-mail($to,$subject,$message,$header);
-$feedback ='Thanks for the email';
+mail($to,$subject,$message,"From:".$email);
+//$feedback ='Thanks for the email';
+print "Your message has been sent"
 }
 ?>
 
-</body>
-</html>
