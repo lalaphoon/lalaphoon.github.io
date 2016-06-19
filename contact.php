@@ -7,13 +7,17 @@
  
 if($_POST["submit"]){
 	if(!$_POST['email']){
-		$feedback="Please enter your email";
+        //style="color: #ffd9cc
+		//$feedback="Please enter your email";
+        $feedback='<p style="color: #ffd9cc">Please enter your email</p>';
 	}
 	if(!$_POST['comment']){
-		$feedback.="<br />Please enter a comment";
+		//$feedback.="<br />Please enter a comment";
+        $feedback.='<p style="color: #ffd9cc">Please enter a feedback</p>';
 	}else{
 	mail($to,$subject,$message,"From:".$email);
-	$feedback ='Thanks for the email';
+	//$feedback ='Thanks for the email';
+    $feedback='<p style="color: #ccffcc">Thank you for your feedback.</p>';
 	}
 	//print "Your message has been sent";
 }
@@ -314,7 +318,7 @@ if($_POST["submit"]){
     <!--h3>Contact Me</h3-->
     
     <form action="contact.php"method="post">
-        <p id="feedback" style="color: #ffd9cc"><?php echo $feedback;?></p>
+        <div id="feedback" ><?php echo $feedback;?></div>
         <input type="text" placeholder="Name" name="name"  />
         <br /><br />
         <input type="text" placeholder="Title" name="title"  />
