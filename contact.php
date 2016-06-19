@@ -150,10 +150,71 @@ if($_POST["submit"]){
         border:1px solid #99ffff;
         border-radius:10px;
         margin-top:20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
     textarea{
         height:200px;
+        border-radius:10px;
+        border:1px solid #99ffff;
+        background:rgba(0,0,0,0.5);
+        width: 90%;
+    }
+    input{
+        height:40px;
+        border-radius:10px;
+        border:1px solid #99ffff;
+        background:rgba(0,0,0,0.5);
+        width: 90%;
+    }
+    form{
+        margin:20px;
+        width: 100%;
+
+    }
+    input[type='text']{
+        color:#99ffff; 
+        font-size: 18px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        padding: 10px;
+    }
+     input[type='email']{
+        color:#99ffff; 
+        font-size: 18px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        padding: 10px;
+    }
+    textarea{
+        color: #99ffff; 
+        font-size: 18px;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        padding: 10px;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #99ffff;
+      opacity: 0.5;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      padding: 10px;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color:#99ffff;
+      opacity: 0.5;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      padding: 10px;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #99ffff;
+      opacity: 0.5;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      padding: 10px;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #99ffff;
+      opacity: 0.5;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      padding: 10px;
     }
      </style>
      <script>
@@ -253,7 +314,7 @@ if($_POST["submit"]){
     <!--h3>Contact Me</h3-->
     
     <form action="contact.php"method="post">
-        <p id="feedback"><?php echo $feedback;?></p>
+        <p id="feedback" style="color: #ffd9cc"><?php echo $feedback;?></p>
         <input type="text" placeholder="Name" name="name"  />
         <br /><br />
         <input type="text" placeholder="Title" name="title"  />
@@ -262,16 +323,16 @@ if($_POST["submit"]){
         <br /><br />
         <textarea name = "comment" placeholder = "Thank you for giving me your feedback" ></textarea>
         <br /><br />
-        <input type="submit" name="submit">
+        <input type="submit" name="submit" class="submitbutton"/>
     </form>
    
 </div>
-<div id="links" class="hidden">
-    <!--h3>My Links</h3-->
-    <ul>
-        <li><a href="https://www.linkedin.com/in/monica-luo-70399857?trk=hp-identity-name">Linkedin</a></li>
-        <li><a href="https://www.instagram.com/lalaphoon/">Instagram</a></li>
-        <li><a href="https://twitter.com/lalaphoon">Twitter</a></li>
+<div id="links" class="hidden" style="padding-top: 50px">
+     <ul>
+        <li class=" floating-box" ><a class="submitbutton" style="padding: 89px 60px;" target="_blank" href="https://www.linkedin.com/in/monica-luo-70399857?trk=hp-identity-name"><img src="images/linkedin.png"/></a></li>
+        <li class=" floating-box" ><a  class="submitbutton" style="padding: 89px 60px" target="_blank" href="https://www.instagram.com/lalaphoon/"><img src="images/instagram.png"/></a></li>
+        <li class=" floating-box" ><a class="submitbutton"style="padding: 89px 60px" target="_blank" href="https://twitter.com/lalaphoon"><img src="images/twitter.png"/></a></li>
+        <li class=" floating-box" ><a class="submitbutton" style="padding: 89px 60px;"target="_blank" href="https://github.com/lalaphoon"><img src="images/github.png"/></a></li>
     </ul> 
 </div>
 
