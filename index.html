@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html>
 <head>
@@ -18,7 +20,7 @@
     <style type="text/css">
 
     html { 
-            background: url("images/starrynight.png") no-repeat center center fixed; 
+            background: url("images/starrynight.jpg") no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -152,9 +154,6 @@
 </head>
 
 <body>
-<?php
-echo "My first PHP script!";
-?> 
 
 <div id="title">
     
@@ -233,7 +232,11 @@ echo "My first PHP script!";
 <div id="contact" class="hidden emailform">
 
     <!--h3>Contact Me</h3-->
-    <form method="post">
+    
+    <form action="contact.php"method="post">
+        <p id="feedback"><?php echo $feedback;?></p>
+        <input type="text" placeholder="Name" name="name"  />
+        <br /><br />
         <input type="text" placeholder="Title" name="title"  />
         <br /><br />
         <input type="email" placeholder = "Email" name = "email" />
