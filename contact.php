@@ -288,7 +288,7 @@ if($_POST["submit"]){
         <li>Excellent organization skills, time-management, self-study and self-motivation.</li>
     </ul>
     <header>CURRENT POSITION</header>
-    <p>part-time Computer Programming Instructor at Real Programming 4 Kids
+    <p>Full-time Computer Programming Instructor at Real Programming 4 Kids
     </p>
     <br />
 
