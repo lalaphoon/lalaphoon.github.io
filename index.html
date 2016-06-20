@@ -178,25 +178,25 @@
       color: #99ffff;
       opacity: 0.5;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      padding: 10px;
+      padding: 5px;
     }
     ::-moz-placeholder { /* Firefox 19+ */
       color:#99ffff;
       opacity: 0.5;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      padding: 10px;
+      padding: 5px;
     }
     :-ms-input-placeholder { /* IE 10+ */
       color: #99ffff;
       opacity: 0.5;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      padding: 10px;
+      padding: 5px;
     }
     :-moz-placeholder { /* Firefox 18- */
       color: #99ffff;
       opacity: 0.5;
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      padding: 10px;
+      padding: 5px;
     }
      </style>
      <script>
@@ -294,10 +294,8 @@
 <div id="contact" class="hidden emailform">
     <!--h3>Contact Me</h3-->
     <!--form action="contact.php"method="post"-->
-    <form action="https://formspree.io/lalaphoon@gmail.com"
-      method="POST">
-        
-        <div id="feedback" style="color:#ffe6cc"><?php echo $feedback;?></div>
+    <form action="https://formspree.io/lalaphoon@gmail.com" method="POST">
+        <div id="feedback"><?php echo $feedback;?></div>
         <input type="text" placeholder="Name" name="name"  />
         <br /><br />
         <input type="text" placeholder="Title" name="title"  />
@@ -306,8 +304,7 @@
         <br /><br />
         <textarea name = "comment" placeholder = "Thank you for giving me your feedback" ></textarea>
         <br /><br />
-        <input type="submit" name="submit" value="Send" class="submitbutton"/>
-
+        <input type="submit" name="submit" value="Send" class="submitbutton" />
     </form> 
 </div>
 <div id="links" class="hidden" style="padding-top: 50px">
