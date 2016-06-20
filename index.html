@@ -293,7 +293,9 @@
 </div>
 <div id="contact" class="hidden emailform">
     <!--h3>Contact Me</h3-->
-    <form action="contact.php"method="post">
+    <!--form action="contact.php"method="post"-->
+    <form action="https://formspree.io/lalaphoon@gmail.com"
+      method="POST">
         
         <div id="feedback" style="color:#ffe6cc"><?php echo $feedback;?></div>
         <input type="text" placeholder="Name" name="name"  />
@@ -304,7 +306,8 @@
         <br /><br />
         <textarea name = "comment" placeholder = "Thank you for giving me your feedback" ></textarea>
         <br /><br />
-        <input type="submit" name="submit" class="submitbutton"/>
+        <input type="submit" name="submit" value="Send" class="submitbutton"/>
+
     </form> 
 </div>
 <div id="links" class="hidden" style="padding-top: 50px">
