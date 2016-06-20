@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 <?PHP
  $to = 'lalaphoon@gmail.com';
  $subject=$_POST['title'];
@@ -352,4 +351,4 @@ if($_POST["submit"]){
 </body>
 </html>
 
->>>>>>> temp
+
