@@ -318,6 +318,7 @@ if($_POST["submit"]){
     <!--h3>Contact Me</h3-->
     
     <form action="contact.php"method="post">
+
         <div id="feedback" ><?php echo $feedback;?></div>
         <input type="text" placeholder="Name" name="name"  />
         <br /><br />
@@ -329,6 +330,7 @@ if($_POST["submit"]){
         <br /><br />
         <input type="submit" name="submit" class="submitbutton"/>
     </form>
+    <div><a class="submitbutton" style="padding:10px 10px" href="mailto:lalaphoon@gmail.com">Send me email via your mail app</a></div>
    
 </div>
 <div id="links" class="hidden" style="padding-top: 50px">

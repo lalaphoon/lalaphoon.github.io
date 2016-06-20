@@ -63,6 +63,8 @@
     }
     div#title {
         height:200px;
+        position:relative;
+        
     }
     div#hmenu ul {
         list-style-type: none;
@@ -215,18 +217,20 @@
 </head>
 
 <body>
-
 <div id="title">
     
     <h1>Lalaphoon's Seashore</h1>
-    <h2>Welcome to visit my world </h2>    
+    <h2>Welcome to visit my world </h2>  
+    <div style="position:absolute;right:10px;bottom:0">
+        <a href="mailto:lalaphoon@gmail.com"><img src="images/message.png" width="20" height="20"></a>
+    </div>  
 </div>
 
 <!-- Navigation bar -->
 <div id="hmenu">
     <ul>
-        <li  class="active" style="width:20%"><a href="#" target="me">About me</a></li>
-        <li  style="width:20%"><a href="#" target="portfolio" >My Portfolio</a></li>
+        <li class="active" style="width:20%"><a href="#" target="me">About me</a></li>
+        <li style="width:20%"><a href="#" target="portfolio" >My Portfolio</a></li>
         <li style="width:20%"><a href="#" target="projects" >My Projects</a></li>
         <li style="width:20%"><a href="#" target="contact">Contact Me</a></li>
         <li style="width:20%"><a href="#" target="links">My Links</a></li>
@@ -286,16 +290,13 @@
         <a class = "submitbutton" target="_blank"href="https://itunes.apple.com/ca/app/moments-stories/id1093880482?mt=8" style="padding:20px 40px; top:-50px">View the App</a>
         <header>Moments (IOS/SWIFT)</header> 
         <p>Moments is designed to help us easily capture and organize the many precious moments in our daily lives. It supports 5 multimedia types (text/audio/photo/sticker/video) and provides various organization methods. Capture your memories with Moments!</p>
-    </div>
-    
-   
+    </div>  
 </div>
 <div id="contact" class="hidden emailform">
-
     <!--h3>Contact Me</h3-->
-    
     <form action="contact.php"method="post">
-        <p id="feedback" style="color:#ffe6cc"><?php echo $feedback;?></p>
+        
+        <div id="feedback" style="color:#ffe6cc"><?php echo $feedback;?></div>
         <input type="text" placeholder="Name" name="name"  />
         <br /><br />
         <input type="text" placeholder="Title" name="title"  />
@@ -305,8 +306,7 @@
         <textarea name = "comment" placeholder = "Thank you for giving me your feedback" ></textarea>
         <br /><br />
         <input type="submit" name="submit" class="submitbutton"/>
-    </form>
-   
+    </form> 
 </div>
 <div id="links" class="hidden" style="padding-top: 50px">
     <!--h3>My Links</h3-->
@@ -317,7 +317,6 @@
         <li class=" floating-box" ><a class="submitbutton" style="padding: 89px 60px;"target="_blank" href="https://github.com/lalaphoon"><img src="images/github.png"/></a></li>
     </ul> 
 </div>
-
 </div>
 <div id="footer">
     
