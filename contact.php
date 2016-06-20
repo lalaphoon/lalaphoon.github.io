@@ -86,6 +86,7 @@ if($_POST["submit"]){
     }
     div#title {
         height:200px;
+        position:relative;
     }
     div#hmenu ul {
         list-style-type: none;
@@ -242,7 +243,10 @@ if($_POST["submit"]){
 <div id="title">
     
     <h1>Lalaphoon's Seashore</h1>
-    <h2>Welcome to visit my world </h2>    
+    <h2>Welcome to visit my world </h2>  
+    <div style="position:absolute;right:10px;bottom:0">
+        <a href="mailto:lalaphoon@gmail.com"><img src="images/message.png" width="20" height="20"></a>
+    </div>    
 </div>
 
 <!-- Navigation bar -->
@@ -314,11 +318,8 @@ if($_POST["submit"]){
    
 </div>
 <div id="contact" class="emailform">
-
     <!--h3>Contact Me</h3-->
-    
     <form action="contact.php"method="post">
-
         <div id="feedback" ><?php echo $feedback;?></div>
         <input type="text" placeholder="Name" name="name"  />
         <br /><br />
@@ -330,8 +331,6 @@ if($_POST["submit"]){
         <br /><br />
         <input type="submit" name="submit" class="submitbutton"/>
     </form>
-    <div><a class="submitbutton" style="padding:10px 10px" href="mailto:lalaphoon@gmail.com">Send me email via your mail app</a></div>
-   
 </div>
 <div id="links" class="hidden" style="padding-top: 50px">
      <ul>
